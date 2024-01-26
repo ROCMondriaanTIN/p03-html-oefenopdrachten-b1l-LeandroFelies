@@ -22,6 +22,7 @@ const object4 = {
     "Black Bananas is onbedoeld ontstaan tijdens zijn stage in Curaçao. Als afscheidscadeau had hij bedacht om voor een andere stagiair een T-shirt te ontwerpen. Hij begon daarom ook met het ontwerpen van zijn eigen logo. Deze werd geïnspireerd door de dieren om",
 };
 
+const objectArray = [object1, object2, object3, object4];
 
 function createCard() {
   let cardHtml = `
@@ -34,4 +35,9 @@ function createCard() {
   return cardHtml;
 }
 const container = document.querySelector(".card-container")
-container.innerHTML += createCard()
+
+for (let i = 0; i < objectArray.length; i++) {
+    const object = objectArray[i];
+    
+    
+}
