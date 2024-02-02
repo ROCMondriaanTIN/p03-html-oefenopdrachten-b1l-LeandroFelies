@@ -1,0 +1,33 @@
+:root {
+--fav-color: #123456;
+}
+
+.header, .left, .right, .cards-container, .footer {
+    border: 2px solid green;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 50px minmax(200px, 1fr) 50px;
+    grid-template-areas: 
+    "hd hd hd"
+    "ls cc rs"
+    "ft ft ft";
+}
+
+.header {
+    grid-area: hd;
+}
+.left {
+    grid-area: ls;
+}
+.right {
+    grid-area: rs;
+}
+.cards-container {
+    grid-area: cc;
+}
+.footer {
+    grid-area: ft;
+}
