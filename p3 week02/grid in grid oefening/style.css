@@ -10,6 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 50px minmax(200px, 1fr) 50px;
+    gap: 5px;
     grid-template-areas: 
     "hd hd hd"
     "ls cc rs"
@@ -26,8 +27,16 @@ body {
     grid-area: rs;
 }
 .cards-container {
+    display: grid;
     grid-area: cc;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+
 }
 .footer {
     grid-area: ft;
+}
+
+.card {
+    border: 1px solid var(--fav-color);
 }
